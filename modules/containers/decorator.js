@@ -69,8 +69,8 @@ export function asyncConnect(asyncItems, mapStateToProps, mapDispatchToProps, me
       }
 
       return {
-        ...mapStateToProps(getImmutableState(mutableState), ownProps),
         ...asyncStateToProps,
+        ...mapStateToProps(getImmutableState(mutableState), ownProps),
       };
     };
 
